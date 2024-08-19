@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.jumbotron {
+    background: url('../images/photo1.jpg') no-repeat center center/cover;
+    height: 60vh;
+  }
+
+  /*Our programs*/
+#Our-programs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    } 
+    .prog{
+      position: relative;
+      height: 100%;
+      width: 95%;
+      overflow: hidden;
+      white-space: nowrap;
+      display: flex;
+    }
+  
+  .Our-progs {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .prog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+  
+  .cardss{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 450px;
+    margin-right: 10px; 
+  }
+  
+  
+  .dotz {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dotz span {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dotz span.active {
+    background-color:  rgb(180, 6, 6);
+  }
+  
+  /* Responsive Styles */
+  
+    @media (max-width: 600px) {
+  .dotz span{
+    display: block;
+  }
+    
+    .About-text{
+      object-fit: cover;
+      width: 100%;
+      
+    }
+  }
+    /* Tablet responsive design */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .dotz span{
+      display: block;
+    }
+    .About-text{
+      object-fit: cover;
+      width: 100%;
+      
+    }
+  }
+  .card-img{
+
+    width: 270px;
+    height: 300px;
+  }
+    /*ongoing programs*/
+    .custom {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .program-card {
+      
+      flex: 1;
+      max-width: 500px;
+      margin-bottom: 20px;
+      height:450px;
+    }
+    .program-card img {
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .program-card-body {
+      margin: 10px;
+    }
+    .card-img-top{
+     margin-top: 10px;
+     max-width:470px;
+      height: 300px;
+    
+    }
+    @media (max-width: 768px) {
+      .custom {
+        flex-direction: column;
+        align-items: center;
+         width: auto;
+      }
+    
+    }
+  
+  /*Testimonial styles*/
+  #testimonials{
+    background-color:rgb(190, 177, 177); 
+    
+  }
+  .testimonial-container {
+   
+    padding: 20px;
+    text-align: center;
+  }
+  .carousel-inner{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+   
+  }
+  .carousel-item {
+    position: relative;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+.carousel-item-next, .carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-active.carousel-item-right {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev,
+.carousel-item-active.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+
+.carousel-item.active {
+    display: block;
+}
+
+.testimonial-container {
+    padding: 20px;
+    text-align: center;
+}
+  
+  .testimonial-container h2, .testimonial-container h3 {
+    margin-bottom: 10px;
+  }
+  
+  .carousel-text {
+    margin-bottom: 60px;
+  }
+
+  .team-members {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+h1 {
+   
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.volunteer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+.volunteers {
+  background-color: #fff;
+  border-radius: 8px;
+  border: #e9e1e1 1px solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.volunteers:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.volunteers img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.volunteers h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+

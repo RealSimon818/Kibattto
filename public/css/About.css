@@ -1,0 +1,95 @@
+/*HELLO*/
+#hello{
+ 
+    background: url('../images/wp-photo.jpg') no-repeat center center/cover;
+    height: 50vh;
+    position: relative;
+    color: #fff;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hello-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hello-content{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+  
+}
+/*About-Kibato*/
+#About-Kibato{
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+column-gap: 50px;
+align-items: center;
+justify-content: center;
+}
+.Aboutimg img{
+    width: 400px;
+    height: 300px;
+    border-radius: 5%;
+}
+.black{
+    color: black;
+}
+
+
+
+ /* Tablet responsive design */
+ @media only screen and (min-width: 60px) and (max-width: 1024px) {
+    .Aboutimg{
+      display: none;
+    }
+    #About-Kibato{
+        background: url('../images/photo11.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .blurry{
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .black{
+        color: white;
+    }
+}
+.found{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.hamza{
+    width: 800px;
+}
+.founder img{
+    height: 500px;
+    width: 400px;
+}
+
+
+@media only screen and (min-width: 60px) and (max-width: 1024px) {
+   
+.founder img{
+    height: 300px;
+    width: 200px;
+}
+}

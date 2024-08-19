@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar Css */
+#Navigation { 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)!important; 
+   
+  }
+.items{
+    font-size: 16px!important;
+    font-family: "Open Sans", sans-serif!important;
+    font-weight: bold!important;
+}
+.items :hover{
+    color: rgb(10, 96, 255)!important;
+    
+}
+
+
+/* End of Navigation bar css */
+
+/*Welcome */
+#Welcome{
+    background: url('../images/0708395160 (8).JPG') no-repeat center center/cover;
+    height: 90vh;
+    position: relative;
+    color: #fff;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.welcome-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.welcome-content{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+  
+}
+
+.btn-orange {
+  background-color: rgb(180, 6, 6)!important;
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+}
+
+.btn-orange:hover {
+  background-color: black!important;
+}
+.headsFont{
+    font-family: "GFS Didot", serif!important;
+    font-size: 48px;
+}
+.bodyFont{
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .headsFont {
+        font-size: 32px;
+    }
+
+    .bodyFont {
+        font-size: 18px;
+    }
+}
+
+/*About us*/
+#About-us{
+    width: 100%;
+    height: 63vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    } 
+    .About-container{
+      position: relative;
+      height: 62vh;
+      width: 95%;
+      overflow: hidden;
+      white-space: nowrap;
+      display: flex;
+    }
+  
+  .About-us {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .About-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
+  .cards{
+    flex: 0 0 auto;
+    width: 320px;
+    height: 350px;
+    margin-right: 10px; 
+  }
+  
+  
+  .dotz {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dotz span {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dotz span.active {
+    background-color:  rgb(180, 6, 6);
+  }
+  
+  /* Responsive Styles */
+  
+    @media (max-width: 600px) {
+  .dotz span{
+    display: block;
+  }
+    
+    .About-text{
+      object-fit: cover;
+      width: 100%;
+      
+    }
+  }
+    /* Tablet responsive design */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .dotz span{
+      display: block;
+    }
+    .About-text{
+      object-fit: cover;
+      width: 100%;
+      
+    }
+  }
+
+  /*Our Prpograms*/
+.Education{
+    background-image: url(../images/classroom-education-learning-people-preview.jpg);
+}
+.Healthcare{
+    background-image: url(../images/african-american-male-doctor-using-600nw-2262625629.webp);
+}
+.Nutrition{
+    background-image: url(../images/hungry-african-children-eating-porridge-260nw-2209818485.webp);
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.programe{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+.programms{
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+
+
+  /*SUCCESS STORIES styles*/
+  #success{
+    background-color:rgb(190, 177, 177); 
+    
+  }
+  .success-container {
+   
+    padding: 20px;
+    text-align: center;
+  }
+  .carousel-inner{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+   
+  }
+  .carousel-item {
+    position: relative;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+.carousel-item-next, .carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-active.carousel-item-right {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev,
+.carousel-item-active.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+
+.carousel-item.active {
+    display: block;
+}
+
+.success-container {
+    padding: 20px;
+    text-align: center;
+}
+  
+  .success-container h2, .success-container h3 {
+    margin-bottom: 10px;
+  }
+  
+  .carousel-text {
+    margin-bottom: 60px;
+  }
+  .successImg{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  /*Meet Our Team*/
+  .team-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-members {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+h1 {
+   
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.team-member h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.team-member p {
+  color: #666;
+  margin-bottom: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*footer section*/
+.footer {
+    padding: 30px 0;
+    font-size: 16px;
+    height: 54vh;
+    background-color: #062546;
+  }
+  
+  .footer h5 {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .footer hr {
+    border-top: 1px solid;
+    margin: 20px 0;
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+  }
+
+ 
+  
+
+    /* For screens smaller than 1025px */
+  @media (max-width: 1025px) {
+    .footer {
+      font-size: 16px;
+      height: 32vh;
+    }
+  }
+  @media (max-width: 915px) {
+    .footer {
+      height: auto;
+    
+    }
+  }
+  
+  /* For screens smaller than 576px */
+  @media only screen and (min-width: 300px) and (max-width: 668px) {
+    .footer {
+      font-size: 16px;
+      height: 125vh;
+    }
+  }
+
+ 
+  /*back to top button*/
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .back-to-top:hover {
+    background-color: #444;
+  }
+  /*donate button*/
+  .donate-button {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;   
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    animation: bounce 2s infinite;
+  }
+  
+  .donate-button:hover {
+   
+    transform: scale(1.1);
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+  }
+  .developer{
+    text-decoration: underline!important;
+  }
+  .below{
+    position: static;
+    bottom: 0;
+  }
+  

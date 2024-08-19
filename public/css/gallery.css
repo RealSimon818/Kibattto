@@ -1,0 +1,80 @@
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+.img-height img{
+    height: 300px!important;
+    width: 400px!important;
+    object-fit: cover;
+    object-position: center;
+}
+.img-height video{
+    height: 300px!important;
+    width: 400px!important;
+    object-fit: cover;
+    object-position: center;
+}
+.img-height{
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+/* Lightbox Modal */
+.modal-body img {
+    width: 100%;        /* Ensure the image takes up the full width of the modal */
+    height: auto;       /* Maintain the aspect ratio */
+    max-height: 70vh;   /* Prevent the image from exceeding 70% of the viewport height */
+    object-fit: contain; /* Ensure the entire image fits within the modal */
+}
+
+.modal-body video {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-item {
+        margin-bottom: 15px;
+    }
+   
+}
+
+
+/* Responsive styling for screens smaller than 768px */
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 70%;         /* Scale modal to 70% of the screen width */
+        height: 600px;
+    }
+
+    .modal-body img, .modal-body video {
+        max-height: 50vh;   /* Adjust max height for smaller screens */
+    }
+}
+
+/* Further adjustment for screens smaller than 576px */
+@media (max-width: 576px) {
+    .modal-dialog {
+        width: 90%;         /* Scale modal to 90% of the screen width */
+        height: 600px;
+    }
+
+    .modal-body img, .modal-body video {
+        max-height: 40vh;   /* Further reduce max height on small screens */
+    }
+}
