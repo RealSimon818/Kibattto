@@ -20,6 +20,66 @@ html{
     color: rgb(10, 96, 255)!important;
     
 }
+@media (max-width: 912px) {
+  .navbar-brand {
+      flex-grow: 1;
+      text-align: center;
+  }
+
+  .navbar-collapse {
+      text-align: center;
+  }
+
+  .navbar-nav {
+      display: block;
+      width: 100%;
+  }
+
+  .nav-item {
+      margin: 0.5rem 0;
+  }
+
+  .close-icon {
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-size: 24px;
+      color: #000;
+  }
+
+.navbar-brand {
+width: 100%;
+
+}
+
+.d-flex.align-items-center {
+flex-direction: column;
+}
+}
+
+.navbar-toggler {
+  border: none;
+  padding-right: 1rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D"http%3A//www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%280, 0, 0, 0.5%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  display: none;
+}
+
+.navbar-toggler.collapsed .close-icon {
+  display: block;
+}
+
+.close-icon {
+  display: none;
+  font-size: 24px;
+  color: black;
+}
+
 
 
 /* End of Navigation bar css */

@@ -84,7 +84,7 @@ const sendMail = async (name, email, phoneNumber, subject, message) => {
 
 
 app.get("/contact", function (req, res) {
-    res.render('contact');
+    res.render('Contact');
   });
 
   app.get("/", function (req, res) {
